@@ -1,1 +1,5 @@
-# odin-ruby-basics git init git add README.md git commit -m first commit git branch -M main git remote add origin https://github.com/MichaelKucukarslan/odin-ruby-basics.git git push -u origin main
+This project is to help me learn Ruby.
+
+I'll also be using Vim as my editor to learn what everyone is excited about. 
+
+**So fat Vim has been a lot of fun to work with.**

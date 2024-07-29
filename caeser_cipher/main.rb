@@ -1,17 +1,4 @@
-def caear_cipher(text, shift)
-  shift_char = lambda do |char|
-    if char.match(/[a-z]/)
-      base = 'a'.ord
-      ((char.ord - base + shift) % 26 + base).chr
-    elsif char.match(/[A-Z]/)
-      base = 'A'.ord
-      ((char.ord - base + shift) % 26 + base).chr
-    else
-      char
-    end
-  end
-  text.chars.map(&shift_char).join
-end
+require_relative 'caesar_cipher'
 
 puts "What phrase would you like to code?"
 user_text = gets.chomp
@@ -32,8 +19,6 @@ while is_user_shift_not_valid
     end
 end
 
-encrypted_text = caear_cipher(user_text, user_shift)
+encrypted_text = caesar_cipher(user_text, user_shift)
 puts "Original: #{user_text}"
 puts "Encrypted: #{encrypted_text}"
-
-# Test
