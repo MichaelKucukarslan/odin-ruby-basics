@@ -1,11 +1,4 @@
 #Take a word and an array of words. Count the number of times the first word occur
-words_to_count = gets.chomp
-
-array_to_test = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-
-count = 0
-
-puts "We are now going to check your words (#{words_to_count}) to the computer provided array [#{array_to_test}]"
 
 def sub_string_count(to_count, to_test)
   # break up the words to count given by the user
@@ -22,5 +15,4 @@ def sub_string_count(to_count, to_test)
   dictionary
 end
 
-puts sub_string_count(words_to_count, array_to_test)
 
